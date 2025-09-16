@@ -1,3 +1,5 @@
+import { NowPlayingItemType } from "./Types.js"
+
 export type SessionsInfo = SessionInfo[]
 
 export interface SessionInfo {
@@ -210,7 +212,7 @@ export interface NowPlayingItem {
     IsHD: boolean
     IsFolder: boolean
     ParentId: string
-    Type: string
+    Type: NowPlayingItemType
     People: People[]
     Studios: Studio[]
     GenreItems: GenreItem[]

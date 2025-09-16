@@ -3,6 +3,7 @@ import gradient from 'gradient-string';
 const RawTags = {
   System: {colors: ['#66FF66', '#00CC66']},
   Jellyfin: {colors: ['#A463BF', '#8E43AD']},
+  Discord: {colors: ['#5865f2', '#3e4bd3ff']},
   Error: {colors: ['#C0382B', '#E84B3C']},
   Warn: {colors: ['#f9fd12ff', '#ad8e00ff']},
   Debug: {colors: ['#3398DB', '#2980B9']},

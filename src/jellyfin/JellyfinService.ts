@@ -18,7 +18,7 @@ export const JellyfinService = {
     GetSessionByUserID: async (UserId: string) => {
         const sessions = await JellyfinService.GetSessions()
 
-        console.log(`[${Tags.Debug}] User ID: ${UserId}`)
+        // console.log(`[${Tags.Debug}] User ID: ${UserId}`)
         const mySession = sessions?.find((x) => x.UserId == UserId) ?? null
 
         return mySession
@@ -32,7 +32,7 @@ export const JellyfinService = {
             return null
         }
 
-        console.log(`[${Tags.Debug}] User ID: ${myUserID}`)
+        // console.log(`[${Tags.Debug}] User ID: ${myUserID}`)
         const mySession = sessions?.find((x) => x.UserId == myUserID) ?? null
 
         return mySession
