@@ -51,7 +51,7 @@ export const DiscordService = {
                     obj.state = `${shortSeaNEpsName} - ${episodeName}`
                 }
 
-                obj.smallImageKey = isPaused == true ? "paused_gradient" : "playing_gradient"
+                obj.smallImageKey = isPaused == true ? "paused" : "playing"
                 obj.smallImageText = `${isPaused == true ? "Paused" : `Playing | ${username}`}`
                 obj.startTimestamp = isPaused == true ? undefined : startTime
             }

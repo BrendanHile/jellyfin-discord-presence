@@ -1,5 +1,5 @@
 {
-  "name": "pemula-ts",
+  "name": "jellyfin-discord-presence",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
@@ -8,8 +8,16 @@
     "start": "npx tsx ./src/index.ts",
     "build": "tsup"
   },
-  "keywords": [],
+  "keywords": [
+    "discord",
+    "discord-rpc",
+    "jellyfin",
+    "scripts"
+  ],
   "author": "adwerygaming",
+  "repository": {
+    "url": "https://github.com/adwerygaming/jellyfin-discord-presence"
+  },
   "license": "ISC",
   "type": "module",
   "engines": {
@@ -29,8 +37,6 @@
     "@jellyfin/sdk": "^0.11.0",
     "axios": "^1.10.0",
     "discord-rpc": "^4.0.1",
-    "dotenv": "^16.5.0",
-    "express": "^5.1.0",
-    "ws": "^8.18.2"
+    "dotenv": "^16.5.0"
   }
 }
