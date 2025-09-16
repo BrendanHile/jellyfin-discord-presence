@@ -1,6 +1,6 @@
 <div align="center">
     <img src="/aseets//screenshots/banner.png">
-    <h1>Jellyfin Discord Presence</h1>
+    <h1>Jellyfin Discord RPC</h1>
     <p>A Node.js application that displays your current Jellyfin viewing activity as a Discord Rich Presence status. Updates your Discord status to show what you're watching, including details like series name, episode, and playback state (playing/paused).</p>
 </div>
 
