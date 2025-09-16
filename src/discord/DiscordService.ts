@@ -61,7 +61,7 @@ export const DiscordService = {
             console.log(`[${Tags.Discord}] ==================================================================`)
             console.log(`[${Tags.Discord}] Active Session : ${username}`)
             console.log(`[${Tags.Discord}] Device         : ${deviceName}`)
-            console.log(`[${Tags.Discord}] Video State   : ${isPaused ? "Paused" : "Playing"}`)
+            console.log(`[${Tags.Discord}] Video State    : ${isPaused ? "Paused" : "Playing"}`)
             console.log(``)
             console.log(`[${Tags.Discord}] Details        : ${obj.details}`)
             console.log(`[${Tags.Discord}] State          : ${obj.state}`)

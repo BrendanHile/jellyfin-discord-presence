@@ -3,7 +3,7 @@ import Tags from "../utils/Tags.js";
 import DiscordRPC from "./Client.js";
 import { DiscordService } from "./DiscordService.js";
 
-const updateInterval = 1000 * 60 * 15 // I suggest putting around >15s
+const updateInterval = 1000 * 15 // I suggest putting around >15s
 const clientId = process.env.DISCORD_CLIENT_ID
 
 if (!clientId) {
