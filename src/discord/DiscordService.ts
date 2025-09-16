@@ -14,7 +14,7 @@ export const DiscordService = {
 
             const username = mySession.UserName // Your jellyfin username
             const deviceName = mySession.DeviceName // example: MASDEPAN-LAPTOP (Chrome)
-            // const clientName = mySession.Client // likely 'Jellyfin Web' or 'Jellyfin Android
+            // const clientName = mySession.Client // likely 'Jellyfin Web' or 'Jellyfin Android'
 
             const obj: Presence = {
                 startTimestamp: Date.now(),

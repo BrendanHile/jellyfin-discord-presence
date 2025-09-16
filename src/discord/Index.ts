@@ -1,4 +1,3 @@
-import { Client } from "discord-rpc";
 import Tags from "../utils/Tags.js";
 import DiscordRPC from "./Client.js";
 import { DiscordService } from "./DiscordService.js";
@@ -11,8 +10,8 @@ if (!clientId) {
     process.exit(1)
 }
 
-DiscordRPC.on('ready', async (rpc: Client) => {
-    console.log(`[${Tags.Discord}] Connected to Discord as ${rpc?.user?.username ?? "Unknown Username"} (${rpc?.user?.id ?? "Unknown User ID"}).`);
+DiscordRPC.on('ready', async () => {
+    console.log(`[${Tags.Discord}] Connected to Discord as ${DiscordRPC?.user?.username ?? "Unknown Username"} (${DiscordRPC?.user?.id ?? "Unknown User ID"}).`);
 
     setInterval(async () => {
         await DiscordService.UpdateRPC()
